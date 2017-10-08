@@ -1,14 +1,16 @@
 'use strict';
 
-System.register([], function (_export, _context) {
-  return {
-    setters: [],
-    execute: function () {
-      function configure(config) {
-        config.globalResources('./typing-trigger');
-      }
+System.register(['./typing-trigger'], function (_export, _context) {
+  "use strict";
 
-      _export('configure', configure);
-    }
+  function configure(config) {
+    config.globalResources('./typing-trigger');
+  }
+
+  _export('configure', configure);
+
+  return {
+    setters: [function (_typingTrigger) {}],
+    execute: function () {}
   };
 });
